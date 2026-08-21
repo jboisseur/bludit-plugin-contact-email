@@ -1,0 +1,10 @@
+{
+  "author": "TrenchOpsCom",
+  "email": "",
+  "website": "https://trenchops.com",
+  "version": "0.2.3",
+  "releaseDate": "2026-08-21",
+  "license": "MIT",
+  "compatible": "3.21",
+  "notes": "Publishes a contact email address spam protected behind a click, encoded so it never appears in the served HTML. Optional proof of work protection."
+}

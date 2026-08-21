@@ -1,0 +1,118 @@
+/*
+ * Deliberately minimal. The button sits in the site theme's content, so it
+ * inherits the theme's font and colours and only asks for the things a <button>
+ * would otherwise get wrong inline. A theme that wants it styled differently
+ * sets `cssClass` in the plugin settings and takes over from there.
+ *
+ * Two shapes, chosen by the `displayStyle` setting:
+ *
+ *   --link    it must read as a link, not as a form control. Every default a
+ *             <button> brings is stripped.
+ *   --themed  it must read as the theme's own button. The theme's `.btn` rules
+ *             are what should win, so everything below is wrapped in :where(),
+ *             which has zero specificity -- a single `.btn` selector beats it,
+ *             and no !important is needed anywhere on either side.
+ */
+
+.contact-email-button {
+	cursor: pointer;
+}
+
+.contact-email-button--link {
+	padding: 0;
+	border: 0;
+	background: none;
+	font: inherit;
+	color: inherit;
+	text-decoration: underline;
+	text-decoration-style: dotted;
+}
+
+.contact-email-button--link:hover,
+.contact-email-button--link:focus {
+	text-decoration-style: solid;
+}
+
+/* Keep the focus ring: this is the one control on the page a keyboard user has
+   to find, and browsers only draw a default ring on controls that have not had
+   their background removed. */
+.contact-email-button--link:focus-visible {
+	outline: 2px solid currentColor;
+	outline-offset: 2px;
+}
+
+/* The fallback for a theme with no button styling of its own. Anything the
+   theme does define -- padding, radius, colours, hover -- overrides this,
+   because :where() contributes no specificity at all. */
+:where(.contact-email-button--themed) {
+	display: inline-block;
+	padding: .375rem .75rem;
+	border: 1px solid currentColor;
+	border-radius: .25rem;
+	background: transparent;
+	font: inherit;
+	color: inherit;
+	line-height: 1.5;
+	text-align: center;
+	text-decoration: none;
+}
+
+:where(.contact-email-button--themed:hover) {
+	opacity: .85;
+}
+
+.contact-email-button[disabled] {
+	cursor: default;
+	opacity: .7;
+}
+
+.contact-email-button--link[disabled] {
+	text-decoration: none;
+}
+
+.contact-email-link {
+	overflow-wrap: anywhere;
+}
+
+.contact-email-noscript {
+	font-style: italic;
+	opacity: .8;
+}
+
+/*
+ * Proof-of-work progress. Inline-flex so it sits next to the button in running
+ * text without forcing a line break, and sized in em throughout so it scales
+ * with whatever the surrounding font is.
+ */
+.contact-email-progress {
+	display: inline-flex;
+	align-items: center;
+	gap: .5em;
+	margin-left: .5em;
+	vertical-align: middle;
+}
+
+/* A neutral grey rather than currentColor at low opacity: the fill is
+   currentColor, and a track made the same way would be invisible against it. */
+.contact-email-progress-track {
+	display: block;
+	width: 8em;
+	height: .5em;
+	border-radius: .25em;
+	background: rgba(127, 127, 127, .35);
+	overflow: hidden;
+}
+
+.contact-email-progress-fill {
+	display: block;
+	width: 0;
+	height: 100%;
+	background: currentColor;
+	transition: width .1s linear;
+}
+
+.contact-email-progress-text {
+	font-size: .85em;
+	font-variant-numeric: tabular-nums;
+	opacity: .8;
+}

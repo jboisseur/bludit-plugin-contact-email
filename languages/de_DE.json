@@ -1,0 +1,43 @@
+{
+	"plugin-data":
+	{
+		"name": "Kontakt-E-Mail",
+		"description": "Veröffentlicht eine E-Mail Kontaktadresse hinter einem Klick. Die Adresse steht nie im ausgelieferten HTML - sie wird kodiert, auf zufällig benannte Attribute verteilt und erst zusammengesetzt, wenn jemand tatsächlich klickt."
+	},
+
+	"contact-email-address": "E-Mail-Adresse",
+	"contact-email-address-tip": "Wird im Klartext auf dem Server gespeichert, aber nie lesbar an den Browser gesendet.",
+	"contact-email-link-text": "Beschriftung",
+	"contact-email-link-text-tip": "Worauf Besucher klicken. Leer lassen für die Voreinstellung.",
+	"contact-email-default-link-text": "E-Mail-Adresse anzeigen",
+	"contact-email-subject": "Betreffzeile",
+	"contact-email-subject-tip": "Wird im Mailprogramm der Besucher vorausgefüllt. Leer lassen für keinen Betreff.",
+	"contact-email-css-class": "Zusätzliche CSS-Klasse",
+	"contact-email-css-class-tip": "Wird der Schaltfläche hinzugefügt, für eigenes Styling. Die plugin-eigene Klasse bleibt in jedem Fall erhalten.",
+
+	"contact-email-display": "Darstellung",
+	"contact-email-display-link": "Textlink",
+	"contact-email-display-button": "Schaltfläche im Stil des Themes",
+	"contact-email-display-tip": "Die Schaltflächen-Variante ergänzt die btn-Klassen des Themes und passt damit zu den übrigen Schaltflächen der Website. Das Ersatz-Styling des Plugins hat Spezifität null und überschreibt das Theme nie.",
+
+	"contact-email-pow": "Rechennachweis verlangen (empfohlen)",
+	"contact-email-pow-tip": "Verschlüsselt die Adresse; der Browser muss den Schlüssel erst berechnen, bevor sie angezeigt werden kann. Keine Verzögerung, die ein Skript überspringen könnte: ohne die Rechnung gibt es keinen Schlüssel. Besucher warten einmalig ein paar Sekunden, ein Adresssammler zahlt denselben Preis für jede Adresse bei jedem Seitenaufruf.",
+	"contact-email-pow-bits": "Schwierigkeit in Bit",
+	"contact-email-pow-bits-tip": "Jedes zusätzliche Bit verdoppelt den Aufwand. Gemessen auf einem Desktop-Rechner mit rund 650.000 Hashes pro Sekunde: 19 Bit deutlich unter einer halben Sekunde, 22 Bit im Mittel etwa 3 Sekunden (höchstens 6), 24 Bit etwa 13 Sekunden, 26 Bit etwa 50 Sekunden. Ein Smartphone ist ungefähr viermal langsamer. Zwischen 8 und 26; über 24 verlangst du von Besuchern mehr Geduld, als die meisten aufbringen.",
+
+	"contact-email-debug": "Debug",
+	"contact-email-debug-tip": "Schreibt den Ablauf der Anzeige Schritt für Schritt in die Browser-Konsole und veröffentlicht zusätzlich eine Prüfsumme der Adresse sowie den Entschlüsselungsschlüssel, damit die Konsole eindeutig benennen kann, woran eine Entschlüsselung scheitert. Danach bitte wieder ausschalten: solange die Option an ist, steht der Schlüssel in der Seite und der Proof of Work schützt nichts mehr.",
+	"contact-email-debug-warning": "Der Debug-Modus veröffentlicht den Entschlüsselungsschlüssel in der Seite und hebt damit den Proof of Work auf. Zur Fehlersuche einschalten, danach wieder ausschalten.",
+
+	"contact-email-token-help": "Schreibe das an beliebiger Stelle in eine Seite oder einen Beitrag, um die Schaltfläche zu platzieren:",
+	"contact-email-sidebar": "Seitenleisten-Widget",
+	"contact-email-sidebar-tip": "Zeigt dieselbe Schaltfläche in der Seitenleiste des Themes, auf jeder Seite. Setzt ein Theme voraus, das den siteSidebar-Hook ausgibt.",
+	"contact-email-sidebar-title": "Überschrift in der Seitenleiste",
+	"contact-email-sidebar-title-tip": "Leer lassen für die Voreinstellung.",
+	"contact-email-default-sidebar-title": "Kontakt",
+
+	"contact-email-failed": "Die Adresse konnte nicht angezeigt werden.",
+	"contact-email-working": "Adresse wird berechnet…",
+	"contact-email-progress": "%d %",
+	"contact-email-noscript": "Zum Anzeigen der E-Mail-Adresse wird JavaScript benötigt."
+}

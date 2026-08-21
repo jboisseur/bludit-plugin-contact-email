@@ -1,0 +1,43 @@
+{
+	"plugin-data":
+	{
+		"name": "Contact Email",
+		"description": "Publishes a contact address behind a click. The address is never in the served HTML -- it is encoded, split across randomly-named attributes and only reassembled when a visitor actually clicks."
+	},
+
+	"contact-email-address": "Email address",
+	"contact-email-address-tip": "Stored in plain text on the server, but never sent to the browser in readable form.",
+	"contact-email-link-text": "Button text",
+	"contact-email-link-text-tip": "What the visitor clicks. Leave empty for the default.",
+	"contact-email-default-link-text": "Show email address",
+	"contact-email-subject": "Subject line",
+	"contact-email-subject-tip": "Pre-filled in the visitor's mail client. Leave empty for none.",
+	"contact-email-css-class": "Extra CSS class",
+	"contact-email-css-class-tip": "Added to the button, for theming. The plugin's own class stays regardless.",
+
+	"contact-email-display": "Appearance",
+	"contact-email-display-link": "Text link",
+	"contact-email-display-button": "Button styled by the theme",
+	"contact-email-display-tip": "The button style adds the theme's own btn classes, so it matches the other buttons on your site. The plugin's fallback styling has zero specificity and never fights the theme.",
+
+	"contact-email-pow": "Require proof of work (recommended)",
+	"contact-email-pow-tip": "Encrypts the address and makes the browser compute the key before it can be shown. Not a delay a script can skip: without the computation there is no key. A visitor waits a few seconds once; a harvester pays the same for every address on every page load.",
+	"contact-email-pow-bits": "Difficulty in bits",
+	"contact-email-pow-bits-tip": "Each extra bit doubles the work. Measured on a desktop at roughly 650,000 hashes per second: 19 bits is well under half a second, 22 bits about 3 seconds on average (6 at worst), 24 bits about 13 seconds, 26 bits about 50 seconds. A phone is around four times slower. Between 8 and 26; above 24 you are asking a visitor to wait longer than most of them will.",
+
+	"contact-email-debug": "Debug",
+	"contact-email-debug-tip": "Writes a step-by-step account of the reveal to the browser console, and publishes a checksum of the address plus the decryption key alongside it, so the console can say definitively where a decode went wrong. Switch it off again afterwards: while it is on, the key is in the page and the proof of work protects nothing.",
+	"contact-email-debug-warning": "Debug mode publishes the decryption key in the page, which defeats the proof of work. Switch it on to diagnose a problem, then switch it off again.",
+
+	"contact-email-token-help": "Write this anywhere in a page or post to place the button:",
+	"contact-email-sidebar": "Sidebar widget",
+	"contact-email-sidebar-tip": "Shows the same button in the theme sidebar, on every page. Requires a theme that renders the siteSidebar hook.",
+	"contact-email-sidebar-title": "Sidebar heading",
+	"contact-email-sidebar-title-tip": "Leave empty for the default.",
+	"contact-email-default-sidebar-title": "Contact",
+
+	"contact-email-failed": "The address could not be shown.",
+	"contact-email-working": "Calculating the address…",
+	"contact-email-progress": "%d%",
+	"contact-email-noscript": "JavaScript is required to show the email address."
+}
