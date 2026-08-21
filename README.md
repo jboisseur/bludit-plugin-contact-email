@@ -17,8 +17,8 @@ pays the same cost for every address on every page it fetches.
 
 ---
 ## Installing
-
-No build step. Copy the folder as it is:
+[Download](https://github.com/toby-sutor/bludit-plugin-contact-email/releases/download/v0.2.3/contact-email.zip) the latest release.
+Extract and copy the folder as it is:
 
 ```
 bl-plugins/contact-email/
