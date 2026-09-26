@@ -1,0 +1,43 @@
+{
+	"plugin-data":
+	{
+		"name": "Contact Email",
+		"description": "Affiche une adresse email après un clic. L'adresse n'apparaît jamais dans le code HTML, elle est encodée, répartie entre des attributs nommés aléatoirement et n'est seulement reconstituée que lorsque l'internaute clique effectivement dessus."
+	},
+
+	"contact-email-address": "Adresse email",
+	"contact-email-address-tip": "Stockée en clair sur le serveur mais jamais transmise au navigateur sous forme lisible.",
+	"contact-email-link-text": "Texte du bouton",
+	"contact-email-link-text-tip": "Ce sur quoi l'internaute clique. Laisse ce champ vide pour conserver la valeur par défaut.",
+	"contact-email-default-link-text": "Afficher l'adresse email",
+	"contact-email-subject": "Objet du mail",
+	"contact-email-subject-tip": "Rempli automatiquement dans le client de messagerie de l'internaute. Laisser vide si aucun objet n'est requis.",
+	"contact-email-css-class": "Classe CSS supplémentaire",
+	"contact-email-css-class-tip": "Ajoutée au bouton à des fins de personnalisation. La classe propre au plugin reste inchangée.",
+
+	"contact-email-display": "Apparence",
+	"contact-email-display-link": "Texte",
+	"contact-email-display-button": "Bouton",
+	"contact-email-display-tip": "Des classes btn sont ajoutées au bouton afin qu'il s'harmonise avec les autres boutons de votre thème. La feuille de style de secours du plugin a une spécificité nulle et n'entre jamais en conflit avec le thème.",
+
+	"contact-email-pow": "Exiger une preuve de travail (recommandé)",
+	"contact-email-pow-tip": "Chiffre l'adresse et oblige le navigateur à calculer la clé avant de pouvoir l'afficher. Aucun délai ne peut être ignoré par le script : sans ce calcul, il n'y a pas de clé. L'internaute attend quelques secondes une seule fois ; un robot d'indexation consacre le même temps à chaque adresse à chaque chargement de page.",
+	"contact-email-pow-bits": "Niveau de difficulté en bits",
+	"contact-email-pow-bits-tip": "Chaque bit supplémentaire double la charge de travail. Mesures effectuées sur un ordinateur à environ 650 000 hachages par seconde : 19 bits correspondent à bien moins d'une demi-seconde, 22 bits à environ 3 secondes en moyenne (6 au pire), 24 bits à environ 13 secondes et 26 bits à environ 50 secondes. Un téléphone est environ quatre fois plus lent. Entre 8 et 26 ; au-delà de 24, vous demandez à l'internaute d'attendre plus longtemps que ce que la plupart accepterait.",
+
+	"contact-email-debug": "Débogage",
+	"contact-email-debug-tip": "Affiche un compte rendu détaillé de la procédure de révélation dans la console du navigateur et publie, en parallèle, une somme de contrôle de l'adresse ainsi que la clé de déchiffrement afin que la console puisse déterminer avec certitude à quel moment le décodage a échoué. Désactivez cette fonctionnalité par la suite : tant qu'elle est activée, la clé se trouve dans la page et la preuve de travail n'assure aucune protection.",
+	"contact-email-debug-warning": "Le mode débogage affiche la clé de déchiffrement sur la page, ce qui rend la preuve de travail caduque. Activez-le pour diagnostiquer un problème, puis désactivez-le à nouveau.",
+
+	"contact-email-token-help": "Écrivez ceci n'importe où dans une page ou un article pour insérer le bouton :",
+	"contact-email-sidebar": "Widget de la barre latérale",
+	"contact-email-sidebar-tip": "Affiche le même bouton dans la barre latérale. Nécessite un thème qui utilise le hook siteSidebar.",
+	"contact-email-sidebar-title": "Titre dans la barre latérale",
+	"contact-email-sidebar-title-tip": "Laissez ce champ vide pour conserver la valeur par défaut.",
+	"contact-email-default-sidebar-title": "Contact",
+
+	"contact-email-failed": "L'adresse n'a pas pu être affichée.",
+	"contact-email-working": "Calcul de l'adresse email…",
+	"contact-email-progress": "%d%",
+	"contact-email-noscript": "JavaScript est nécessaire pour afficher l'adresse e-mail."
+}
